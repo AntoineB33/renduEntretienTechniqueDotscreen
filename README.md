@@ -1,3 +1,9 @@
+# How to make the code work
+
+After cloning the repo, run `npm install` to install all the dependencies, then run `npm start`.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

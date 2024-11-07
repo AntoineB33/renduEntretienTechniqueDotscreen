@@ -1,38 +1,65 @@
-.App {
+.connect-four {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+  display: inline-block;
+  border: 2px solid #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+.cell.R {
+  background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell.Y {
+  background-color: yellow;
+}
+
+.winner {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.which-player {
+  display: flex;
+  align-items: center; /* Vertically align */
+  justify-content: center; /* Center horizontally */
+}
+
+.player-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 10px; /* Space between circle and player name */
+}
+
+.player-circle.R {
+  background-color: red;
+}
+
+.player-circle.Y {
+  background-color: yellow;
 }
